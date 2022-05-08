@@ -1,0 +1,224 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variable */
+:root{
+    --navbar-height: 60px;
+}
+
+
+/* navigation bar: logo and image */
+#logo{
+    margin: 40px;
+    
+}
+#logo img{
+    height: 64px;
+    margin: -25px;
+    margin-left: -22px;
+    margin-right: 6px;
+    
+}
+
+/* navigation bar: list styling */
+#navbar{
+    display:flex;
+    text-align: center;
+    position: sticky;
+}
+
+#navbar ul{
+    display:flex
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.3;
+    
+    
+}
+#navbar  ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 22px;
+    text-decoration: none;
+    margin-top: 30px;
+    
+}
+#navbar ul li a:hover{
+    
+    color: red;
+    background-color: black;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 246px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("https://media.weddingz.in/images/3451c2854f617b255b357d6fedc249e3/ngos-you-can-contact-to-eliminate-food-wastage-at-your-wedding.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    z-index:-1;
+    opacity:0.6;
+
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box{
+    border: 2px solid black;
+    padding: 22px;
+    margin: 12px 22px;
+    border-radius: 12px;
+    background-color: rgb(238, 253, 223);
+
+}
+#services .box img{
+  
+    height:160px;
+    display: flex;
+    display: block;
+    margin: auto;
+
+}
+#services .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+/* client section */
+#clients-section{
+    position: relative;
+    height: 200px;
+    
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url("https://b.zmtcdn.com/data/o2_assets/fb8ec579b8f48d197f042a8e229e8c661621256027.png")no-repeat center center/cover;
+    width: 100%;
+    height: 1200px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:100px;
+}
+#clients-item{
+    padding:34px;
+}
+/* contact us */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    /*background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000__480.jpg")  center center/cover;*/
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary{
+    font-size: 3.8rem;
+    text-align: center;
+    padding: 18px;
+    margin-top: 300px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 18px;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 33px;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: rgb(26, 21, 21);
+}
+.centre{
+    text-align: center;
+}
+
+mark {
+  background-color: black;
+  color: white;
+}
